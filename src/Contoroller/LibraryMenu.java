@@ -146,8 +146,7 @@ public class LibraryMenu {
 
                 // Sort
                 case 2:
-
-                    Sorting bubble = new Sorting();
+                Sorting bubble = new Sorting();
 
                     Book[] bookArr = new Book[books.size()];
 
@@ -162,6 +161,7 @@ public class LibraryMenu {
                         System.out.println(" Written By : " + b.getAuthor_first_name() + " " + b.getAuthor_last_name());
                     }
                     break;
+
 
 //              // Linearsearch 
 //                            // Case
@@ -191,7 +191,7 @@ public class LibraryMenu {
                 // Sort
 //             // Case
                 case 4:
-                    Sorting insert = new Sorting();
+Sorting insert = new Sorting();
 
                     Student[] studentArr = new Student[students.size()];
                     for (int i = 0; i < students.size(); i++) {
@@ -200,13 +200,15 @@ public class LibraryMenu {
                     insert.insertionSort(studentArr);
                     Student student = null;
                     for (Student s : studentArr) {
-                        if (student == null || !student.getStudentFirst().equals(s.getStudentFirst())) {
-                            System.out.println("Student first Name: " + s.getStudentFirst());
-                            System.out.println(" Students Name and ID: " + s.getStudentFullname() + " " + s.getStudentId());
+                        if (student == null || !student.toStringfirstName().equals(s.toStringfirstName())) {
+                            System.out.println("Student first Name: " + s.toStringfirstName());
+                            System.out.println(" Students full Name: " + s.getStudentFullname()+ " " + " Students Id: " + s.getStudentId());
+                            
                         }
                         student = s;
                     }
                     break;
+
 
                 // Case Register borrowing
                 case 5:

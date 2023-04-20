@@ -69,6 +69,10 @@ public class Book implements Comparable {  //data = MOCK_DATA.csv
         return "\nBook info : " + "bookid=" + bookid + ", author_first_name=" + author_first_name + ", author_last_name=" + author_last_name + ", book_title=" + book_title;
     }
 
+    public String toStringBookTitle() {
+    return book_title;
+    }
+    
     @Override
     public int compareTo(Object o) {
         return this.book_title.compareTo(o.toString());

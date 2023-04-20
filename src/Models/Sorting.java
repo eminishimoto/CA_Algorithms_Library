@@ -20,7 +20,7 @@ public class Sorting {
             swap = false;
 
             for (int j = 0; j < array.length - 1; j++) {
-                if (array[j].toString().toLowerCase().compareTo(array[j + 1].toString().toLowerCase()) > 0) {
+                if (array[j].toStringBookTitle().replaceAll("[^a-zA-Z]", "").toLowerCase().compareTo(array[j + 1].toStringBookTitle().replaceAll("[^a-zA-Z]", "").toLowerCase()) > 0) {
                     temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
@@ -59,7 +59,7 @@ public class Sorting {
          for (int i = 1; i<array.length; i++){
             Student keyElement=array[i];
             int pos = i;
-            while(pos>0 && array[pos - 1].toString().toLowerCase().compareTo(keyElement.toString().toLowerCase())>0){
+            while(pos>0 && array[pos - 1].toStringfirstName().toLowerCase().compareTo(keyElement.toStringfirstName().toLowerCase())>0){
                 array[pos] = array[pos -1];
                 pos=pos-1;                               
             }

@@ -10,7 +10,7 @@ import java.util.Objects;
  *
  * @author emi
  */
-public class Student {
+public class Student implements Comparable {
     
         // attribute
     private String studentId;
@@ -40,10 +40,7 @@ public class Student {
     }
     
     
-    // for sorting part
-    public String toStringstudentF() {
-    return studentFirst;
-    }
+
     
     public String showStudentinfo() {
         return "\nStudent info : " + "studentId=" + studentId + ", studentFirst=" + studentFirst + ", studentLast=" + studentLast + ", gender=" + gender + ", country=" + country ;
@@ -67,5 +64,14 @@ public class Student {
         return studentFirst  + " " + studentLast;
     }
 
+public String toStringfirstName(){
+    return studentFirst;
+    }
 
+//   }
+     @Override
+    public int compareTo(Object o) {
+        return this.studentFirst.compareTo(o.toString());
+    }
+    
 }
