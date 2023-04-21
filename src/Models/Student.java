@@ -71,7 +71,7 @@ public String toStringfirstName(){
 //   }
      @Override
     public int compareTo(Object o) {
-        return this.studentFirst.compareTo(o.toString());
+        return this.studentFirst.compareTo(o.toString()); //toString before comparing
     }
     
 }
