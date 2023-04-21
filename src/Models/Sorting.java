@@ -8,6 +8,7 @@ package Models;
  *
  * @author Anny
  */
+//Reference https://www.geeksforgeeks.org/comparable-interface-in-java-with-examples/
 //Reference https://stackoverflow.com/questions/311276/problem-replacing-words-using-a-za-z-regex
 public class Sorting {
         //method returns array of books
